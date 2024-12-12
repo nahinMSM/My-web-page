@@ -1,16 +1,16 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 
 <head>
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Ricardo Hofstetter Dias - Desenvolvedor Frontend</title>
+  <title>Nahin Moreira - Desenvolvedor Web</title>
 
+  <link rel="shortcut icon" href="src/imagens/fivicon.png" />
   <link rel="stylesheet" href="src/css/font-awesome.css" />
   <link rel="stylesheet" href="src/css/reset.css" />
-  
-  <!-- Global -->
+
   <link rel="stylesheet" href="src/css/globais.css" />
   <link rel="stylesheet" href="src/css/variaveis.css" />
   <link rel="stylesheet" href="src/css/secoes/header.css" />
@@ -24,11 +24,16 @@
 </head>
 
 <body>
+  <div class="scroll-up-btn">
+    <p>^</p>
+  </div>
   <header class="header">
     <div class="container">
       <div class="row justify-content-between alinhar-itens-no-centro">
         <a href="#">
-          <h1 class="logo">RD</h1>
+          <h1 class="logo outer-shadow">
+            <img src="src/imagens/logo_whit.png" alt="Logo">
+          </h1>
         </a>
         <nav>
           <input id="menu-hamburguer" type="checkbox" />
@@ -39,9 +44,9 @@
             </div>
           </label>
           <ul>
-            <li><a href="#sobre-mim">Sobre mim</a></li>
-            <li><a href="#habilidades">Habilidades</a></li>
-            <li><a href="#projetos">Meus projetos</a></li>
+            <li><a href="#sobre-mim" class="menu-item">Sobre mim</a></li>
+            <li><a href="#habilidades" class="menu-item">Habilidades</a></li>
+            <li><a href="#projetos" class="menu-item">Meus Projetos</a></li>
           </ul>
         </nav>
       </div>
@@ -52,26 +57,30 @@
     <div class="container">
       <div class="row full-screen alinhar-itens-no-centro">
         <div class="texto-home">
-          <p>Olá 🖖,</p>
-          <h1>Sou o Ricardo Dias</h1>
-          <h2>Desenvolvedor Frontend</h2>
+          <p>Olá 🖖</p>
+          <h1>Sou Nahin Moreira</h1>
+          <h2>Desenvolvedor &nbsp <span class="typing"></span></h2>
 
           <div class="redes-sociais">
-            <a href="#" class="outer-shadow"><i class="fab fa-linkedin-in"></i></a>
-            <a href="#" class="outer-shadow"><i class="fab fa-whatsapp"></i></a>
-            <a href="#" class="outer-shadow"><i class="fab fa-github"></i></a>
-            <a href="#" class="outer-shadow"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.linkedin.com/in/nahin-moreira-752b9a246/" target="_blank" class="outer-shadow"><i
+                class="fab fa-linkedin-in"></i></a>
+            <a href="https://wa.me/557999232104" target="_blank" class="outer-shadow"><i
+                class="fab fa-whatsapp"></i></a>
+            <a href="https://github.com/nahinMSM" target="_blank" class="outer-shadow"><i class="fab fa-github"></i></a>
+            <a href="https://www.instagram.com/nahin.moreira/profilecard/?igsh=MW43YjEzeGd6YTI3dg%3D%3D" target="_blank"
+              class="outer-shadow"><i class="fab fa-instagram"></i></a>
           </div>
         </div>
 
         <div class="img-home">
           <div class="img-box inner-shadow">
-            <img class="outer-shadow" src="src/imagens/foto-perfil.png" alt="foto do perfil do Ricardo" />
+            <img class="outer-shadow" src="src/imagens/perfil.jpg" alt="foto do perfil do Nahin" />
           </div>
         </div>
       </div>
     </div>
   </section>
+
   <section class="sobre-mim section" id="sobre-mim">
     <div class="container">
       <div class="row">
@@ -82,26 +91,30 @@
       <div class="row">
         <div class="imagem-sobre-mim">
           <div class="img-box inner-shadow">
-            <img src="src/imagens/foto-perfil.png" alt="foto sobre mim" class="outer-shadow" />
+            <img src="src/imagens/sobre.jpeg" alt="foto sobre mim" class="outer-shadow" />
           </div>
         </div>
         <div class="informacoes-sobre-mim">
           <p>
-            <strong>Olá! Me chamo Ricardo Dias e sou um desenvolvedor frontend em
-              formação!</strong>
-              Gosto MUITO da área de tecnologia, e tenho certeza que posso contribuir em qualquer time com as minhas habilidades.
+            <strong>Olá! Meu nome é Nahin Moreira, sou desenvolvedor web com experiência em Front-End e em
+              aprimoramento de Back-End!</strong>
+            Gosto MUITO da área de tecnologia, e estou à disposição para contribuir em qualquer time com as minhas
+            habilidades.
           </p>
 
           <p>
-           Estou sempre me desafiando coim novos projetos e participando de comunidades de programação para buscar feedback de outros desenvolvedores e desenvolvedoras. Além de tentar ajudar essas pessoas com o que eu já aprendi. 😁
+            Participo de comunidades de programação e busco sempre formas de me manter atualizado. Nessas interações,
+            valorizo o feedback de outros desenvolvedores e gosto de compartilhar meu conhecimento para ajudar quem está
+            começando ou enfrentando desafios. 😁
           </p>
 
           <p>
-            Ah, gosto de jogos, filmes, séries, animes e outras nerdices. 💜
+            Além de desenvolver soluções web, tenho como atividade extra a paixão por adestrar cães. Essa prática me
+            permite exercitar paciência, disciplina, criatividade e liderança de matilha. 💜
           </p>
 
           <div class="botoes">
-            <a target="_blank" href="/src/arquivos/cv.pdf" class="botao outer-shadow">Veja meu CV</a>
+            <a target="_blank" href="/src/arquivos" class="botao outer-shadow">Download CV</a>
           </div>
         </div>
       </div>
@@ -122,29 +135,76 @@
             <i class="devicon devicon-javascript-plain" id="javascript"></i>
           </div>
           <h3>JavaScript</h3>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt placeat ipsam suscipit consequuntur ex
-            reiciendis alias accusamus quo consectetur. Consequatur sequi ab id expedita facilis cupiditate quia atque
-            dignissimos possimus!</p>
         </div>
 
         <div class="informacoes html">
           <div class="logo">
-            <i class="devicon devicon-html5-plain-wordmark" id="html"></i>
+            <i class="devicon devicon-html5-plain" id="html"></i>
           </div>
           <h3>HTML5</h3>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt placeat ipsam suscipit consequuntur ex
-            reiciendis alias accusamus quo consectetur. Consequatur sequi ab id expedita facilis cupiditate quia atque
-            dignissimos possimus!</p>
         </div>
 
         <div class="informacoes css">
           <div class="logo">
-            <i class="devicon devicon-css3-plain-wordmark" id="css"></i>
+            <i class="devicon devicon-css3-plain" id="css"></i>
           </div>
           <h3>CSS3</h3>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt placeat ipsam suscipit consequuntur ex
-            reiciendis alias accusamus quo consectetur. Consequatur sequi ab id expedita facilis cupiditate quia atque
-            dignissimos possimus!</p>
+        </div>
+
+        <div class="informacoes react">
+          <div class="logo">
+            <i class="devicon devicon-react-original" id="react"></i>
+          </div>
+          <h3>React.js</h3>
+        </div>
+
+        <div class="informacoes typescript">
+          <div class="logo">
+            <i class="devicon devicon-typescript-original" id="typescript"></i>
+          </div>
+          <h3>TypeScript</h3>
+        </div>
+
+        <div class="informacoes jquery">
+          <div class="logo">
+            <i class="devicon devicon-jquery-plain" id="jquery"></i>
+          </div>
+          <h3>Jquery.js</h3>
+        </div>
+
+        <div class="informacoes vscode">
+          <div class="logo">
+            <i class="devicon devicon-vscode-plain" id="vscode"></i>
+          </div>
+          <h3>VSCode</h3>
+        </div>
+
+        <div class="informacoes nodejs">
+          <div class="logo">
+            <i class="devicon devicon-nodejs-plain" id="nodejs"></i>
+          </div>
+          <h3>Node.js</h3>
+        </div>
+
+        <div class="informacoes postgresql">
+          <div class="logo">
+            <i class="devicon devicon-postgresql-plain" id="postgresql"></i>
+          </div>
+          <h3>PostgreSQL</h3>
+        </div>
+
+        <div class="informacoes firebase">
+          <div class="logo">
+            <i class="devicon devicon-firebase-plain" id="firebase"></i>
+          </div>
+          <h3>Firebase</h3>
+        </div>
+
+        <div class="informacoes jest">
+          <div class="logo">
+            <i class="devicon devicon-jest-plain" id="jest"></i>
+          </div>
+          <h3>Jest</h3>
         </div>
 
         <div class="informacoes github">
@@ -152,9 +212,6 @@
             <i class="devicon devicon-github-original" id="github"></i>
           </div>
           <h3>GitHub</h3>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt placeat ipsam suscipit consequuntur ex
-            reiciendis alias accusamus quo consectetur. Consequatur sequi ab id expedita facilis cupiditate quia atque
-            dignissimos possimus!</p>
         </div>
 
         <div class="informacoes git">
@@ -162,9 +219,6 @@
             <i class="devicon devicon-git-plain" id="git"></i>
           </div>
           <h3>Git</h3>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt placeat ipsam suscipit consequuntur ex
-            reiciendis alias accusamus quo consectetur. Consequatur sequi ab id expedita facilis cupiditate quia atque
-            dignissimos possimus!</p>
         </div>
       </div>
     </div>
@@ -179,49 +233,184 @@
       </div>
 
       <div class="container-projetos">
-        <div class="projeto">        
-          <a href="https://github.com">
-            <img src="https://via.placeholder.com/515X700" alt="Nome do projeto" />
-            <h3>Projeto 1</h3>
-            <div class="informacoes-projeto">          
-              <p>Projeto feito usando HTML, CSS e JavaScript</p>
-              <p>🔗 Ver no GitHub Pages</p>
-            </div>     
-          </a>
-        </div>
-
-        <div class="projeto">        
-          <a href="https://github.com">
-            <img src="https://via.placeholder.com/515X700" alt="Nome do projeto" />
-            <h3>Projeto 2</h3>
-            <div class="informacoes-projeto">          
-              <p>Lorem ipsum</p>
-              <p>🔗 Ver no GitHub Pages</p>
-            </div>      
-          </a>          
-        </div>
-
-        <div class="projeto">     
-          <a href="https://github.com">
-            <img src="https://via.placeholder.com/515X700" alt="Nome do projeto" />
-            <h3>Projeto 3</h3>
+        <div class="projeto">
+          <a href="https://github.com/nahinMSM/quest-react-pokedex" target="_blank">
+            <img src="src/imagens/Telas/pokedex.png" alt="Lyout do projeto" />
+            <h3>Projeto Pokedex</h3>
             <div class="informacoes-projeto">
-              <p>Lorem ipsum</p>
+              <p>Projeto feito usando React.js, Axios, style-components, Context API, React Router DOM e test Jest</p>
               <p>🔗 Ver no GitHub Pages</p>
             </div>
-          </a>   
+          </a>
         </div>
 
         <div class="projeto">
-          <a href="https://github.com">
-            <img src="https://via.placeholder.com/515X700" alt="Nome do projeto" />
-            <h3>Projeto 4</h3>
+          <a href="https://github.com/nahinMSM/Projeto-fetch-GitHub-api" target="_blank">
+            <img src="src/imagens/Telas/githube_fetcher_api.png" alt="Lyout do projeto" />
+            <h3>Projeto Fetch GitHub API</h3>
             <div class="informacoes-projeto">
-              <p>Lorem ipsum</p>
+              <p>Projeto feito usando HTML, CSS, JavaScript e API do GitHub</p>
               <p>🔗 Ver no GitHub Pages</p>
             </div>
           </a>
         </div>
+
+        <div class="projeto">
+          <a href="https://github.com/nahinMSM/age-calculator-app-main" target="_blank">
+            <img src="src/imagens/Telas/age_calculator.png" alt="Lyout do projeto" />
+            <h3>Projeto Age calculator</h3>
+            <div class="informacoes-projeto">
+              <p>Projeto feito usando HTML, CSS e JavaScript</p>
+              <p>🔗 Ver no GitHub Pages</p>
+            </div>
+          </a>
+        </div>
+
+        <div class="projeto">
+          <a href="https://github.com/nahinMSM/interative-card" target="_blank">
+            <img src="src/imagens/Telas/interative_card.png" alt="Lyout do projeto" />
+            <h3>Projeto Interative card</h3>
+            <div class="informacoes-projeto">
+              <p>Projeto feito usando HTML, CSS e JavaScript</p>
+              <p>🔗 Ver no GitHub Pages</p>
+            </div>
+          </a>
+        </div>
+
+        <div class="projeto">
+          <a href="https://github.com/nahinMSM/Advogada-Landing-page" target="_blank">
+            <img src="src/imagens/Telas/advogada_trb_landing_page.png" alt="Lyout do projeto" />
+            <h3>Projeto Landing page Advogada Trabalhista</h3>
+            <div class="informacoes-projeto">
+              <p>Projeto feito usando HTML, CSS e JavaScript</p>
+              <p>🔗 Ver no GitHub Pages</p>
+            </div>
+          </a>
+        </div>
+
+        <div class="projeto">
+          <a href="https://github.com/nahinMSM/Multi-Step-Form-Main" target="_blank">
+            <img src="src/imagens/Telas/multi_step_form.png" alt="Lyout do projeto" />
+            <h3>Projeto Multi Step Form</h3>
+            <div class="informacoes-projeto">
+              <p>Projeto feito usando HTML, CSS e JavaScript</p>
+              <p>🔗 Ver no GitHub Pages</p>
+            </div>
+          </a>
+        </div>
+
+        <div class="projeto">
+          <a href="https://github.com/nahinMSM/advice-generator-app-html-css-js" target="_blank">
+            <img src="src/imagens/Telas/active-states.png" alt="Lyout do projeto" />
+            <h3>Projeto Advice generator</h3>
+            <div class="informacoes-projeto">
+              <p>Projeto feito usando HTML, CSS, JavaScript e API</p>
+              <p>🔗 Ver no GitHub Pages</p>
+            </div>
+          </a>
+        </div>
+
+        <div class="projeto">
+          <a href="https://github.com/nahinMSM/Quest-HTML-CSS-JS-intermediario-Formulario-com-validacao"
+            target="_blank">
+            <img src="src/imagens/Telas/formulario_com_validacao.png" alt="Lyout do projeto" />
+            <h3>Projeto Formulário com validação</h3>
+            <div class="informacoes-projeto">
+              <p>Projeto feito usando HTML, CSS e JavaScript</p>
+              <p>🔗 Ver no GitHub Pages</p>
+            </div>
+          </a>
+        </div>
+
+        <div class="projeto">
+          <a href="https://github.com/nahinMSM/landing-page-com-grid-agencia-xyz" target="_blank">
+            <img src="src/imagens/Telas/xyz_agencia.png" alt="Lyout do projeto" />
+            <h3>Projeto XYZ Agência</h3>
+            <div class="informacoes-projeto">
+              <p>Projeto feito usando HTML e CSS</p>
+              <p>🔗 Ver no GitHub Pages</p>
+            </div>
+          </a>
+        </div>
+
+        <div class="projeto">
+          <a href="https://github.com/nahinMSM/huddle-landing-page-with-single-introductory-section-master"
+            target="_blank">
+            <img src="src/imagens/Telas/huddle_landing_page.png" alt="Lyout do projeto" />
+            <h3>Projeto Huddle landing page</h3>
+            <div class="informacoes-projeto">
+              <p>Projeto feito usando HTML e CSS</p>
+              <p>🔗 Ver no GitHub Pages</p>
+            </div>
+          </a>
+        </div>
+
+        <div class="projeto">
+          <a href="https://github.com/nahinMSM/room-homepage-master" target="_blank">
+            <img src="src/imagens/Telas/room_homepage_master.png" alt="Lyout do projeto" />
+            <h3>Projeto Room homepage master</h3>
+            <div class="informacoes-projeto">
+              <p>Projeto feito usando HTML, CSS e JavaScript</p>
+              <p>🔗 Ver no GitHub Pages</p>
+            </div>
+          </a>
+        </div>
+
+        <div class="projeto">
+          <a href="https://github.com/nahinMSM/news-homepage-main" target="_blank">
+            <img src="src/imagens/Telas/news_homepage.png" alt="Lyout do projeto" />
+            <h3>Projeto News homepage</h3>
+            <div class="informacoes-projeto">
+              <p>Projeto feito usando HTML, CSS e JavaScript</p>
+              <p>🔗 Ver no GitHub Pages</p>
+            </div>
+          </a>
+        </div>
+
+        <div class="projeto">
+          <a href="https://github.com/nahinMSM/newsletter-sign-up-with-success-message-main" target="_blank">
+            <img src="src/imagens/Telas/boletim_informativo.png" alt="Lyout do projeto" />
+            <h3>Projeto Boletim informativo</h3>
+            <div class="informacoes-projeto">
+              <p>Projeto feito usando HTML, CSS e JavaScript</p>
+              <p>🔗 Ver no GitHub Pages</p>
+            </div>
+          </a>
+        </div>
+
+        <div class="projeto">
+          <a href="https://nahinmoreira.netlify.app/" target="_blank">
+            <img src="src/imagens/Telas/galeria_lithbox.png" alt="Layout do projeto" />
+            <h3>Projeto Atividade Extra como Adestrador</h3>
+            <div class="informacoes-projeto">
+              <p>Galeria LightBox de imagens e videos feito em HTML, CSS, JavaScript E Jquery</p>
+              <p>🔗 Ver Pages</p>
+            </div>
+          </a>
+        </div>
+
+        <div class="projeto">
+          <a href="https://lyriospet.netlify.app/" target="_blank">
+            <img src="src/imagens/Telas/landing_page_petshop_lyrios.png" alt="Layout do projeto" />
+            <h3>Projeto Landing page PetShop</h3>
+            <div class="informacoes-projeto">
+              <p>Landing Page de PetShop feito com HTML, CSS e JavaScript</p>
+              <p>🔗 Ver Pages</p>
+            </div>
+          </a>
+        </div>
+
+        <div class="projeto">
+          <a href="https://github.com/nahinMSM/Projeto-Carnalita/tree/main" target="_blank">
+            <img src="src/imagens/Telas/carnalita.png" alt="Layout do projeto" />
+            <h3>Projeto Carnalita</h3>
+            <div class="informacoes-projeto">
+              <p>Projeto feito no AdobeFlash com ActionScript 3.0 e refeito usando HTML, CSS e JavaScript</p>
+              <p>🔗 Ver no GitHub Pages</p>
+            </div>
+          </a>
+        </div>
+
       </div>
     </div>
   </section>
@@ -230,13 +419,20 @@
     <div class="container">
       <h2>Me envie uma mensagem!</h2>
       <div class="redes-sociais">
-        <a href="#" class="outer-shadow"><i class="fab fa-linkedin-in"></i></a>
-        <a href="#" class="outer-shadow"><i class="fab fa-whatsapp"></i></a>
-        <a href="#" class="outer-shadow"><i class="fab fa-github"></i></a>
-        <a href="#" class="outer-shadow"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.linkedin.com/in/nahin-moreira-752b9a246/" target="_blank" class="outer-shadow"><i
+            class="fab fa-linkedin-in"></i></a>
+        <a href="https://wa.me/557999232104" target="_blank" class="outer-shadow"><i class="fab fa-whatsapp"></i></a>
+        <a href="https://github.com/nahinMSM" target="_blank" class="outer-shadow"><i class="fab fa-github"></i></a>
+        <a href="https://www.instagram.com/nahin.moreira/profilecard/?igsh=MW43YjEzeGd6YTI3dg%3D%3D" target="_blank"
+          class="outer-shadow"><i class="fab fa-instagram"></i></a>
       </div>
     </div>
   </footer>
+
+  <script src="src/JS/active-menu.js"></script>
+  <script src="src/JS/header-sticky.js"></script>
+  <script src="src/JS/scroll-up-btn.js"></script>
+  <script src="src/JS/type-text.js"></script>
 </body>
 
 </html>
