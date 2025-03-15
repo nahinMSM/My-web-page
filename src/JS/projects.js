@@ -1,5 +1,19 @@
 const projects = [
   {
+    title: "Conversor de Texto e Fala Web",
+    image: "src/imagens/Telas/conversor_web.png",
+    description: "Projeto feito usando CSS, React.js, TypeScript, JavaScript, SpeechRecognition API: Para reconhecimento de fala, SpeechSynthesis API: Para síntese de voz.",
+    github: "https://github.com/nahinMSM/Conversor-de-Texto-com-Tradutor",
+    pages: "🔗 Ver no GitHub Pages",
+  },
+  {
+    title: "Sistema de Sirviços para Hoteis",
+    image: "src/imagens/Telas/sistem-hoteis.png",
+    description: "Projeto feito usando HtML, CSS, JavaScript e FireStore da Firebase",
+    github: "https://github.com/nahinMSM/CRUD-de-servico",
+    pages: "🔗 Ver no GitHub Pages",
+  },
+  {
     title: "Projeto Pokedex",
     image: "src/imagens/Telas/pokedex.png",
     description: "Projeto feito usando React.js, Axios, style-components, Context API, React Router DOM e test Jest",
