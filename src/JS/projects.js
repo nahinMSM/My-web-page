@@ -1,5 +1,12 @@
 const projects = [
   {
+    title: "Pedidos Lanche App",
+    image: "src/imagens/Telas/pedidos_lanche.png",
+    description: "Projeto feito usando React.js, TypeScript, Tailwind CSS, Firebase Authentication + Firestore, Upload e exibição de imagens de produtos",
+    github: "https://www.linkedin.com/feed/update/urn:li:activity:7315350653105508353/",
+    pages: "🔗 Ver no Poster do Linkedin",
+  },
+  {
     title: "Conversor de Texto e Fala Web",
     image: "src/imagens/Telas/conversor_web.png",
     description: "Projeto feito usando CSS, React.js, TypeScript, JavaScript, SpeechRecognition API: Para reconhecimento de fala, SpeechSynthesis API: Para síntese de voz.",
